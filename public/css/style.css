@@ -1,0 +1,348 @@
+
+
+@import url("partials/config.css");
+
+@import url("partials/header.css");
+
+
+/*Correcciones bootstrap*/
+.carousel-control-next:hover,
+.carousel-control-prev:hover{
+    background:none;
+    border:none;
+    box-shadow: none;
+}
+
+.carousel-indicators{
+    margin-bottom: .5rem;
+}
+
+.carousel-indicators button:hover{
+    background:none;
+    border:none;
+    box-shadow: none;
+}
+
+.carousel-indicators button{
+    color: #000;
+}
+/***********
+    MAIN!
+  Productos
+***********/
+
+@import url("partials/background.css");
+
+
+.container-products{
+    width: 100%;
+    max-width: 1024px;
+    padding: 1.6rem;
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.container-products h3{
+    width: 100%;
+    display:inline-block;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    margin: 15px 0;
+    user-select: none;
+}
+.item-products{
+    width: 30%;
+    max-width: 200px;
+    min-width: 236px;
+    min-height: 277px;
+    padding: 1rem;
+    background: #FFFFFF;
+    border: .1rem solid #7C7E82;
+    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 13px;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    
+    font-family: "Baloo 2";
+    text-align: center;
+    margin: 5px;
+}
+
+.item-products a{
+    display: flex;
+    
+    flex-direction: column;
+  justify-content: space-between;
+    align-items: center;
+    height: 270px;
+    
+}
+
+.item-products a div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 32%;
+}
+
+.img-products{
+    width: 70%;
+    border-radius: 50%;
+    border: 0.1rem solid #7C7E82;
+}
+
+
+
+.item-products h4{
+    color:#000000;
+    font-size: 2rem;
+    font-family: 'Baloo 2';
+}
+
+.item-products p{
+    color:#000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    transition: all 450ms;
+}
+
+.item-products:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.item-products p.actual:hover{
+    color:var(--verde);
+    font-size: 2rem;
+    
+}
+
+.item-products p.offer{
+    font-size: 1rem;
+    color: var(--gris);
+    text-decoration:line-through;
+}
+/*MAIN
+MEDIOS DE PAGO*/
+
+.medios-pago{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 16px;
+}
+
+.medios-pago h3{
+    font-size: 1.8rem;
+    width: 100%;
+}
+
+.medios-pago div{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 350px;
+    min-width: 250px;
+}
+
+div.medios-pago div i{
+    transform: rotate(-10deg);
+    font-size: 2.8rem;
+    margin: 5px;
+}
+
+div.medios-pago div.tarjeta i{
+    color: #FFC4E1;
+    
+    -webkit-text-stroke:#000000 0.5px;
+}
+
+div.medios-pago div.efectivo i{
+    color: #5BC8AC;
+    -webkit-text-stroke:#000000 0.5px;
+}
+
+
+
+.medios-pago div.formulario{
+    font-size: 1.4rem;
+    margin: 20px 0px 20px;
+    width: 100%;
+    max-width: none;
+}
+
+.medios-pago div.formulario form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.medios-pago div.formulario form label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.medios-pago div.formulario form input{
+    width:100%;
+    max-width: 300px;
+    margin-top:5px;
+    margin-bottom:5px;
+    border-radius: 5px;
+    border:none;
+    padding: 3px;
+    outline: none;
+}
+
+.medios-pago div.formulario form input:focus{
+    border: 1px solid #FFC4E1;
+    box-shadow: 0px 0px 4px #FFC4E1;
+}
+
+.medios-pago div.formulario form button{
+    background-color: transparent;
+    width: 150px;
+    border: 2px solid;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 8px 12px;
+    font-size: 16px;
+    color: var(--negro);
+    outline: none;
+    border-color: var(--rosaClaro);
+    box-shadow: 0 0 40px 40px var(--rosaClaro) inset;
+    transition: box-shadow 0.1s ease-in-out;
+    
+}
+
+.medios-pago div.formulario form button:hover{
+    box-shadow: 0 0 10px 0 var(--rosaClaro) inset, 0 0 10px 4px var(--rosaClaro);
+}
+
+
+@import url("partials/footer.css");
+
+
+@media (min-width:661px){
+    nav.nav-bar{
+        width:100%;
+        left:-100%;
+    }
+
+    ul.li-container li a{
+        width: 30%;
+    }
+
+    footer{
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    footer article.middle-footer{
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+        
+    }
+
+    footer article.media-socials{
+        order:1;
+        margin:0 20px;
+    }
+
+    footer article.copyright{
+        order:2;
+    }
+
+    
+}
+
+@media (min-width:800px){
+    .header-menu{
+        display: none;
+    }
+
+    nav.nav-bar{
+        display: flex;
+        position:relative;
+        width:60%;
+        height: 73px;
+        background-color: white; 
+        left: auto; 
+        top: auto;
+        order:1;
+        padding:0;
+        align-items: center;      
+    }
+
+    ul.li-container{
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0;
+    }
+
+    ul.li-container li{
+        margin:0;
+        width: fit-content;
+        align-items: center;
+        
+    }
+
+    ul.li-container li a{
+        font-size: 14px;
+        width: fit-content;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    ul.li-container li a i{
+        padding: 0 5px;
+    }
+
+
+    .avatar-container{
+        width: 73px;
+        height: 73px;
+        order: 1;
+        margin: 0;
+        
+    }
+
+    img.avatar{
+        width: 50px;
+        height: 50px;
+    }
+    
+
+    
+}
+
+@media (min-width:1102px){
+    ul.li-container li a{
+        flex-direction: row;
+        
+    }
+}

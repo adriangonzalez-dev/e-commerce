@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<%-include ("../partials/head")%> 
+
+<body class="back-grad">
+
+   <%-include("../partials/header")%> 
+    <main class="login" >
+        <section class="lg-container register">
+            <h2>Iniciar sesion</h2>
+            <hr>
+            <form action="/login" method="post">
+                <div class="input-container">
+                    <input type="email" class="input-style" name="email" placeholder="Ingrese su email" value="<%=(locals.old && old.email) ? old.email : ""%>">
+                    <% if (locals.errors && errors.email) { %>
+                        <span class="error-message"><%=errors.email.msg%></span>
+                    <% } %>
+                </div>
+                <div class="input-container">
+                    <input type="password" class="input-style" name="pass" placeholder="Ingrese su contraseña">
+                    <% if (locals.errors && errors.pass) { %>
+                        <span class="error-message"><%=errors.pass.msg%></span>
+                    <% } %>
+                </div>
+
+                <div class="input-container text-center">
+                    <label for="remember">
+                        Recordarme
+                        <input type="checkbox" name="remember" id="remember">
+                    </label>
+
+                </div>
+                
+            
+                <div class="btn-container">
+                    <% if (locals.errors && errors.custom) { %>
+                        <span class="error-message"><%=errors.custom.msg%></span>
+                    <% } %>
+
+                    
+                    <button type="submit" class="btn btn-submit">Ingresar</button>
+                </div>
+                <span id="olvidoContrasenia"><a  href="">¿Olvidaste tu contraseña?</a></span>
+                <span id="center">¿No tenes cuenta? <a  href="register">Registrate</a></span>
+            </form>
+    
+        </section>
+    </main>               
+    
+    <%-include("../partials/footer")%>
+   
+</body>
+</html>

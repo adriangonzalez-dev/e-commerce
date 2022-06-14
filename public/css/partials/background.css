@@ -1,0 +1,10 @@
+.back-grad{
+    background-image: url("/img/back-img.png");
+    background-size:contain;
+    background-attachment: fixed;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}

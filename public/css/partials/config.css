@@ -1,0 +1,44 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --verde: #98DBC6;
+    --gris: #7C7E82;
+
+    --grisClaro: #E5E5E5;
+    --grisOscuro: #7C7E82;
+    --rosaClaro: #FFC4E1;
+    --rosaOscuro: #F18D9E;
+    --verdeClaro: #98DBC6;
+    --verdeOscuro: #5BC8AC;
+    --amarillo: #E6D72A;
+    --negro: #000;
+    --blanco: #fff;
+
+    --fontPrincipal: 'Baloo 2';
+    --fontSecundaria: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    outline: none;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    margin-bottom: 0;
+}
+
+p{
+    margin-bottom: 0;
+}

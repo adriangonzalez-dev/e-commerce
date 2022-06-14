@@ -1,0 +1,96 @@
+/*FOOTER*/
+footer{
+    display:flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #c5c5c5;
+    width:100%;
+}
+
+footer a.logo-footer{
+    width: 25%;
+    max-width: 100px;
+    margin:20px;
+    display: flex;
+    justify-content: center;
+}
+
+footer a.logo-footer img#img-footer{
+    width: 100%;
+    max-width: 90px;
+}
+
+footer article.media-socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer article.media-socials p{
+    margin-bottom:10px;
+}
+
+footer article.media-socials div.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+footer article.media-socials div.redes a{
+    color: #000;
+    padding: 5px;
+    font-size: 20px;
+    transition: all 450ms;
+}
+
+footer article.media-socials div.redes a:hover{
+    background-color: #FFC4E1;
+    border-radius: 50%;
+}
+/*----3er div----*/
+footer article.middle-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 50%;
+    max-width: 100px;
+    min-width: fit-content;
+    align-items: center;
+}
+
+footer article.middle-footer div.middle-box{
+    font-size: 1.6rem;
+    color:#000;
+    display: flex;
+    flex-direction: column;
+}
+
+footer article.middle-footer div.middle-box1{
+    margin: 5px;
+}
+
+footer article.middle-footer div.middle-box1 a{
+    color: #000;
+}
+
+footer article.middle-footer div.middle-box2 a img{
+    position:fixed;
+    right:25px;
+    bottom:45px;
+    width: 40px;
+    
+    
+}
+
+
+footer article.copyright{
+    width: 100%;
+}
+footer article.copyright p{
+    font-size: 12px;
+}
